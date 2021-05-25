@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2pt-KB-LZG"; */
+"2pt-KB-LZG.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Pass"; ObjectID = "Bjo-NV-xL3"; */
+"Bjo-NV-xL3.normalTitle" = "飛ばす";
+
+/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[0] = "ひらがな"; ObjectID = "GFq-Yc-RPB"; */
+"GFq-Yc-RPB.segmentTitles[0]" = "ひらがな";
+
+/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[1] = "カタカナ"; ObjectID = "GFq-Yc-RPB"; */
+"GFq-Yc-RPB.segmentTitles[1]" = "カタカナ";
+
+/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[2] = "漢字"; ObjectID = "GFq-Yc-RPB"; */
+"GFq-Yc-RPB.segmentTitles[2]" = "漢字";
+
+/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[3] = "記号"; ObjectID = "GFq-Yc-RPB"; */
+"GFq-Yc-RPB.segmentTitles[3]" = "記号";
+
+/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[4] = "All"; ObjectID = "GFq-Yc-RPB"; */
+"GFq-Yc-RPB.segmentTitles[4]" = "All";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "mo9-4u-Lp3"; */
+"mo9-4u-Lp3.normalTitle" = "消去";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "rKc-vR-ZY5"; */
+"rKc-vR-ZY5.normalTitle" = "保存して次";
