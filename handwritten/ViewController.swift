@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         let renderer = UIGraphicsImageRenderer(size: size)
         let im = renderer.image(actions: { rendererContext in
             rendererContext.cgContext.setFillColor(UIColor.white.cgColor)
-            rendererContext.cgContext.fill(.infinite)
+            rendererContext.cgContext.fill(CGRect(origin: .zero, size: size))
             UIGraphicsPushContext(rendererContext.cgContext)
             let paragraph = NSMutableParagraphStyle()
             paragraph.alignment = .center
@@ -87,9 +87,10 @@ class ViewController: UIViewController {
         case 3:
             inputtype = .kigo
         default:
-            inputtype = .all
+            inputtype = .user
+            performSegue(withIdentifier: "toSelectUser", sender: nil)
         }
-
+        
         currentTarget = targets.getRandomChar(type: inputtype)
         countLabel.text = "\(targets.count) / \(targets.allCount)"
         drawView.clear()
@@ -121,6 +122,31 @@ class ViewController: UIViewController {
         countLabel.text = "\(targets.count) / \(targets.allCount)"
         drawView.clear()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSelectUser" {
+            guard let secondVC = segue.destination as? SelectViewController else {
+                return
+            }
+            secondVC.userText = targets.userSelect.map({ String($0) }).joined()
+        }
+    }
+    
+    @IBAction func unwindFromSecondVC(segue: UIStoryboardSegue) {
+        // Here you can receive the parameter(s) from secondVC
+        guard let secondVC = segue.source as? SelectViewController else {
+            return
+        }
+        if secondVC.userText.count > 0 {
+            targets.userSelect = Array(Set(secondVC.userText.components(separatedBy: .whitespacesAndNewlines).joined())).sorted()
+            
+            currentTarget = targets.getRandomChar(type: .hiragana)
+            currentTarget = targets.getRandomChar(type: inputtype)
+            countLabel.text = "\(targets.count) / \(targets.allCount)"
+            drawView.clear()
+        }
+    }
+
 }
 
 class Picture: UIDocument {

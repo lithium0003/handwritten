@@ -1,6 +1,12 @@
 
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "0Xn-qR-rWy"; */
+"0Xn-qR-rWy.normalTitle" = "決定";
+
 /* Class = "UILabel"; text = "Label"; ObjectID = "2pt-KB-LZG"; */
 "2pt-KB-LZG.text" = "Label";
+
+/* Class = "UILabel"; text = "Input user defined text"; ObjectID = "7t2-UU-Qgn"; */
+"7t2-UU-Qgn.text" = "ユーザー定義の文字集合を入力";
 
 /* Class = "UIButton"; normalTitle = "Pass"; ObjectID = "Bjo-NV-xL3"; */
 "Bjo-NV-xL3.normalTitle" = "飛ばす";
@@ -17,8 +23,11 @@
 /* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[3] = "記号"; ObjectID = "GFq-Yc-RPB"; */
 "GFq-Yc-RPB.segmentTitles[3]" = "記号";
 
-/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[4] = "All"; ObjectID = "GFq-Yc-RPB"; */
-"GFq-Yc-RPB.segmentTitles[4]" = "All";
+/* Class = "UISegmentedControl"; GFq-Yc-RPB.segmentTitles[4] = "指定"; ObjectID = "GFq-Yc-RPB"; */
+"GFq-Yc-RPB.segmentTitles[4]" = "指定";
+
+/* Class = "UIButton"; normalTitle = "Load from file"; ObjectID = "Pvn-qK-U8f"; */
+"Pvn-qK-U8f.normalTitle" = "ファイルから読み込み";
 
 /* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "mo9-4u-Lp3"; */
 "mo9-4u-Lp3.normalTitle" = "消去";

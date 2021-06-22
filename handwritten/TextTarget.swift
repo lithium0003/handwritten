@@ -36,29 +36,16 @@ class TextTarget {
         (Character("ァ").unicodeScalars.first!.value...Character("ヺ").unicodeScalars.first!.value).map({ String(Unicode.Scalar($0)!) }).flatMap({ Array($0) })
     }()
     let other: [Character] = Array("!#$%&()*+,-./:;<=>?@[]^{}~")
-    let yakumono: [Character] = Array("。、「」『』()…‥")
+    let yakumono: [Character] = Array("〜ー。、「」『』()…‥")
     
-    lazy var allChar: [Character] = {
-//        var ret = self.num
-//        ret += self.lower
-//        ret += self.upper
-//        ret += self.hiragana
-//        ret += self.katakana
-//        ret += self.kanji
-//        ret += self.other
-        var ret = self.hiragana
-        ret += self.katakana
-        ret += self.kanji
-        ret += self.yakumono
-        return ret
-    }()
+    var userSelect: [Character] = []
     
     enum texttype {
         case hiragana
         case katakana
         case kanji
         case kigo
-        case all
+        case user
     }
 
     var count = 0
@@ -74,7 +61,7 @@ class TextTarget {
             case .kigo:
                 return self.yakumono.count
             default:
-                return self.allChar.count
+                return self.userSelect.count
             }
         }
     }
@@ -100,8 +87,11 @@ class TextTarget {
             case .kigo:
                 randomChar = self.yakumono.shuffled()
             default:
-                randomChar = self.allChar.shuffled()
+                randomChar = self.userSelect.shuffled()
             }
+        }
+        guard count < randomChar.count else {
+            return ""
         }
         let s = String(randomChar[count])
         count += 1

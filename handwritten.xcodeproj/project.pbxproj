@@ -16,6 +16,7 @@
 		3F4967CA24858A0100F98447 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4967C824858A0100F98447 /* Line.swift */; };
 		3F4967CB24858A0100F98447 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4967C924858A0100F98447 /* DrawView.swift */; };
 		3F4967CD24858D5C00F98447 /* TextTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4967CC24858D5C00F98447 /* TextTarget.swift */; };
+		3FD252962680E80B00611A5F /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD252952680E80B00611A5F /* SelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,9 @@
 		3F4967C924858A0100F98447 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		3F4967CC24858D5C00F98447 /* TextTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTarget.swift; sourceTree = "<group>"; };
 		3F4967CE24859AB300F98447 /* handwritten.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = handwritten.entitlements; sourceTree = "<group>"; };
-		3F97BA01265D4EE000165C01 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		3F97BA02265D4EE000165C01 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3FD252952680E80B00611A5F /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		3FD252982680FC3700611A5F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				3F4967B42485897900F98447 /* AppDelegate.swift */,
 				3F4967B62485897900F98447 /* SceneDelegate.swift */,
 				3F4967B82485897900F98447 /* ViewController.swift */,
+				3FD252952680E80B00611A5F /* SelectViewController.swift */,
 				3F4967CC24858D5C00F98447 /* TextTarget.swift */,
 				3F4967BA2485897900F98447 /* Main.storyboard */,
 				3F4967BD2485897C00F98447 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 				3F4967B92485897900F98447 /* ViewController.swift in Sources */,
 				3F4967CB24858A0100F98447 /* DrawView.swift in Sources */,
 				3F4967CA24858A0100F98447 /* Line.swift in Sources */,
+				3FD252962680E80B00611A5F /* SelectViewController.swift in Sources */,
 				3F4967CD24858D5C00F98447 /* TextTarget.swift in Sources */,
 				3F4967B52485897900F98447 /* AppDelegate.swift in Sources */,
 				3F4967B72485897900F98447 /* SceneDelegate.swift in Sources */,
@@ -168,7 +172,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F4967BB2485897900F98447 /* Base */,
-				3F97BA01265D4EE000165C01 /* ja */,
+				3FD252982680FC3700611A5F /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -237,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -293,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -309,13 +313,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = handwritten/handwritten.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 7A9X38B4YU;
 				INFOPLIST_FILE = handwritten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = info.lithium03.handwritten;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -329,13 +334,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = handwritten/handwritten.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 7A9X38B4YU;
 				INFOPLIST_FILE = handwritten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = info.lithium03.handwritten;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
